@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import CookieButton from "./components/CookieButton";
+// import CookieButton from "./components/CookieButton";
+import UpgradesShop from "./components/UpgradesShop";
 
 export default function App() {
   const [cookies, setCookies] = useState(100);
@@ -27,11 +28,11 @@ export default function App() {
         src="./src/assets/cookie-svgrepo-com.svg"
         onClick={() => setCookies(cookies + 1)}
       />
+      <UpgradesShop />
     </>
   );
 }
 
-// get cookies on page = useState
-// button to increment cookie
-// set interval to increment cookies
+// button to increment cookie - try refactor code so logic is stored in CookieButton component
 // fetch shop data and display
+// local storage
