@@ -1,4 +1,9 @@
 .shop-area {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
+}
+
+.shop-area button {
+  align-self: flex-start;
 }

@@ -21,7 +21,13 @@ export default function UpgradesShop({ handleTransaction }) {
   return (
     <section className="shop-area">
       {shopItems.map(({ id, name, cost, increase }) => (
-        <button key={id} onClick={handleTransaction}>
+        // using data-attributes to pass back the cost to deduct from total cookies
+        <button
+          key={id}
+          onClick={handleTransaction}
+          data-cost={cost}
+          data-increase={increase}
+        >
           <h4>{name}</h4>
           <p>Price: {cost}</p>
           <p>Additional cookies: {increase}</p>
