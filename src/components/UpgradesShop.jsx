@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import "./UpgradesShop.css";
 
-export default function UpgradesShop() {
+export default function UpgradesShop({ handleTransaction }) {
   const [shopItems, setShopItems] = useState([]);
 
   // need to wrap the async fetch function in useEffect to stop it fetching/ hitting the api everytime it renders
@@ -8,7 +9,7 @@ export default function UpgradesShop() {
     async function fetchUpgrades() {
       // getting the api data from the url and storing it in response
       const response = await fetch(
-        "https://jsonplaceholder.typicode.com/users"
+        "https://cookie-upgrade-api.vercel.app/api/upgrades"
       );
       // read the response in json and store that in data
       const data = await response.json();
@@ -18,13 +19,13 @@ export default function UpgradesShop() {
   }, []);
 
   return (
-    <section>
-      {shopItems.map(({ id, name, username, email }) => (
-        <div key={id}>
-          <p>{name}</p>
-          <p>{username}</p>
-          <p>{email}</p>
-        </div>
+    <section className="shop-area">
+      {shopItems.map(({ id, name, cost, increase }) => (
+        <button key={id} onClick={handleTransaction}>
+          <h4>{name}</h4>
+          <p>Price: {cost}</p>
+          <p>Additional cookies: {increase}</p>
+        </button>
       ))}
     </section>
   );

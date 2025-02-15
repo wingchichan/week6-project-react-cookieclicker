@@ -1,0 +1,4 @@
+.shop-area {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,5 +1,5 @@
+import "./App.css";
 import { useState, useEffect } from "react";
-// import CookieButton from "./components/CookieButton";
 import UpgradesShop from "./components/UpgradesShop";
 
 export default function App() {
@@ -19,16 +19,25 @@ export default function App() {
     };
   }, []);
 
+  function handleTransaction() {
+    console.log("buy me");
+    setCookies(cookies - );
+  }
+
   return (
     <>
-      <p>Total Cookies</p>
-      <br />
-      <p>{cookies}</p>
-      <img
-        src="./src/assets/cookie-svgrepo-com.svg"
-        onClick={() => setCookies(cookies + 1)}
-      />
-      <UpgradesShop />
+      <section id="page-container">
+        <p>Total Cookies</p>
+        <p>{cookies}</p>
+        <img
+          width={"300px"}
+          className="cookie-image"
+          src="./src/assets/cookie-svgrepo-com.svg"
+          onClick={() => setCookies(cookies + 1)}
+        />
+        <button onClick={handleTransaction}>Click here</button>
+        <UpgradesShop handleTransaction={handleTransaction}/>
+      </section>
     </>
   );
 }
