@@ -30,7 +30,7 @@ export default function UpgradesShop({ handleTransaction }) {
         >
           <h4>{name}</h4>
           <p>Price: {cost}</p>
-          <p>Additional cookies: {increase}</p>
+          <p>+ {increase} 🍪</p>
         </button>
       ))}
     </section>

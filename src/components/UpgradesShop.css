@@ -1,9 +1,21 @@
 .shop-area {
+  background-color: wheat;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
+  padding: 20px;
+  font-size: 25px;
 }
 
-.shop-area button {
-  align-self: flex-start;
+@media (min-width: 600px) {
+  .shop-area {
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+
+  .shop-area button {
+    flex-basis: 0;
+    min-width: 250px;
+  }
 }

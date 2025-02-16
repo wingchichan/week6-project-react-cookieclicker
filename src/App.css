@@ -42,8 +42,51 @@
 } */
 
 #page-container {
-  background-color: burlywood;
+  background-color: #eee;
   display: flex;
-  flex-direction: row;
-  height: 100vh;
+  flex-direction: column;
+
+  width: 100vw;
+
+  color: #222;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#total-number {
+  background-color: #222;
+  border-radius: 10px;
+  color: wheat;
+  font-size: 50px;
+  margin-top: 5px;
+}
+
+#cps-number {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+#cps-number span {
+  background-color: #222;
+  border-radius: 10px;
+  width: 50px;
+  display: inline-block;
+  color: wheat;
+}
+
+#scoreboard {
+  padding: 20px;
+}
+
+@media (min-width: 600px) {
+  #page-container {
+    flex-direction: row;
+    width: 100vw;
+    min-height: 100vh;
+  }
 }
