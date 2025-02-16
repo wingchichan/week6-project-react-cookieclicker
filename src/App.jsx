@@ -84,7 +84,3 @@ export default function App() {
     </>
   );
 }
-
-// button to increment cookie - try refactor code so logic is stored in CookieButton component
-// fetch shop data and display
-// local storage
