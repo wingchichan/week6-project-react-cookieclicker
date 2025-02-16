@@ -1,2 +1,5 @@
-The starter demo was usful in getting me started on the project. I felt I understood the theory and logic on React throughout the week but putting it into practice proved to be challenging, in particular using Hooks (useState and useEffect).
-sticky on mobile for the cookies and cps but couldnt get the cookie graphic to hide
+The starter demo was usful in getting me started on the project. I felt I understood the theory and logic on React during the week but putting it into practice in this project proved to be challenging, in particular using Hooks (useState and useEffect) and passing props to access data across components.
+
+I have achieved the main requirements of the project and have implemented local storage as part of a stretch goal. I have also included responsive design using media queries this time, which I didn't do on my week 3 cookie clicker project. To improve the user experience on mobile I wanted to use position sticky on the total cookies and CPS display so that stays in view as the user scrolls through the shop items, but it was quite fiddly and I coudln't get the image to hide and required more time so I didn't manage to achieve this. Feedback on how to achieve this would be useful.
+
+Sources of help I used were Stack Overflow forums, React documentation, Josh W Comeau, DhiWise, W3School and MDN.

@@ -7,6 +7,16 @@
   font-size: 25px;
 }
 
+.shop-area button {
+  transition: all 0.3s ease-in-out;
+  border: 0;
+}
+
+.shop-area button:hover {
+  background-color: white;
+  color: black;
+}
+
 @media (min-width: 600px) {
   .shop-area {
     flex-direction: row;
