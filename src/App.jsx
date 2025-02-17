@@ -1,4 +1,5 @@
 import "./App.css";
+import imgUrl from "./cookie-svgrepo-com.svg";
 import { useState, useEffect } from "react";
 import UpgradesShop from "./components/UpgradesShop";
 
@@ -74,7 +75,7 @@ export default function App() {
           </div>
           <img
             className="cookie-image"
-            src="./src/cookie-svgrepo-com.svg"
+            src={imgUrl}
             onClick={() => setTotalCookies(totalCookies + 1)}
           />
         </section>
