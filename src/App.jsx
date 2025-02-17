@@ -74,7 +74,7 @@ export default function App() {
           </div>
           <img
             className="cookie-image"
-            src="./src/assets/cookie-svgrepo-com.svg"
+            src="./src/cookie-svgrepo-com.svg"
             onClick={() => setTotalCookies(totalCookies + 1)}
           />
         </section>
